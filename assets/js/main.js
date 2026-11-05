@@ -82,28 +82,42 @@ function initMobileMenu() {
 /**
  * 3. Scroll Reveal Animasyonları (Intersection Observer)
  */
-function initScrollAnimations() {
-  // Kullanıcının reduced-motion tercihi varsa animasyonları atla
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (prefersReducedMotion) return;
+let scrollRevealObserver = null;
 
-  const revealElements = document.querySelectorAll(".reveal-on-scroll");
+function initScrollAnimations() {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) {
+    document.querySelectorAll(".reveal-on-scroll").forEach(el => el.classList.add("revealed"));
+    return;
+  }
+
+  const revealElements = document.querySelectorAll(".reveal-on-scroll:not(.revealed)");
   if (revealElements.length === 0) return;
 
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("revealed");
-        obs.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.12,
-    rootMargin: "0px 0px -40px 0px"
-  });
+  if (!("IntersectionObserver" in window)) {
+    revealElements.forEach(el => el.classList.add("revealed"));
+    return;
+  }
 
-  revealElements.forEach(el => observer.observe(el));
+  if (!scrollRevealObserver) {
+    scrollRevealObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: "0px 0px -20px 0px"
+    });
+  }
+
+  revealElements.forEach(el => scrollRevealObserver.observe(el));
 }
+
+// Global olarak erişilebilir yap
+window.initScrollAnimations = initScrollAnimations;
 
 /**
  * 4. Sayfa Başına Dön Butonu
