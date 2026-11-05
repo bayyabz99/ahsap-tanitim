@@ -1,0 +1,722 @@
+/**
+ * ==============================================================================
+ * VALEN AHŞAP & KERESTE - MOBİL & DUYARLI STİLLER (RESPONSIVE.CSS)
+ * ==============================================================================
+ * Sayfa filtreleri, ağaç türleri rehberi, iletişim formu, hakkında sayfaları
+ * ve tüm ekran boyutları için (Masaüstü, Tablet, Mobil) optimize edilmiş kurallar.
+ */
+
+/* ------------------------------------------------------------------------------
+   1. KATALOG & ÜRÜNLER SAYFASI ÖZEL STİLLERİ (URUNLER.HTML)
+   ------------------------------------------------------------------------------ */
+.catalog-top-bar {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catalog-search-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+}
+
+.search-input-wrapper svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+  pointer-events: none;
+}
+
+.catalog-search-input {
+  width: 100%;
+  padding: 13px 44px 13px 46px;
+  background-color: var(--color-offwhite);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  transition: all var(--transition-fast);
+}
+
+.catalog-search-input:focus {
+  outline: none;
+  background-color: var(--color-white);
+  border-color: var(--color-wood-brown);
+  box-shadow: 0 0 0 3px rgba(118, 82, 57, 0.15);
+}
+
+.btn-clear-search-input {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+  font-size: 1.2rem;
+  padding: 4px;
+  line-height: 1;
+}
+
+.catalog-sort-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.catalog-sort-select {
+  padding: 12px 18px;
+  background-color: var(--color-offwhite);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--color-walnut-dark);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Kategori Filtre Butonları */
+.category-filter-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+
+.category-filter-nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.category-filter-nav::-webkit-scrollbar-thumb {
+  background-color: var(--color-beige-light);
+  border-radius: 4px;
+}
+
+.cat-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: var(--color-offwhite);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-pill);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-walnut-dark);
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.cat-filter-btn:hover {
+  background-color: var(--color-cream);
+  border-color: var(--color-wood-light);
+}
+
+.cat-filter-btn.active {
+  background-color: var(--color-walnut-deep);
+  color: var(--color-white);
+  border-color: var(--color-walnut-deep);
+}
+
+.cat-count {
+  font-size: 0.76rem;
+  opacity: 0.8;
+}
+
+.catalog-meta-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+.results-count-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Boş Arama Durumu */
+.empty-search-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-md);
+}
+
+.empty-icon-wrap {
+  color: var(--color-wood-light);
+  margin-bottom: 16px;
+}
+
+.empty-search-state h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.empty-search-state p {
+  color: var(--color-text-muted);
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+/* ------------------------------------------------------------------------------
+   2. AĞAÇ TÜRLERİ REHBERİ ÖZEL STİLLERİ (AGAC-TURLERI.HTML)
+   ------------------------------------------------------------------------------ */
+.species-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.species-detail-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.species-detail-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(118, 82, 57, 0.3);
+}
+
+.species-visual-col {
+  position: relative;
+  background-color: var(--color-walnut-dark);
+  min-height: 440px;
+}
+
+.species-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.species-card-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: var(--color-walnut-deep);
+  color: var(--color-cream);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.species-info-col {
+  padding: clamp(28px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+}
+
+.species-header-meta {
+  margin-bottom: 16px;
+}
+
+.species-latin-name {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--color-wood-brown);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.species-common-name {
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  margin-bottom: 8px;
+}
+
+.species-tagline {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--color-walnut-medium);
+}
+
+.species-summary-text {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Teknik Parametreler Grid'i */
+.species-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  background-color: var(--color-cream);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.metric-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metric-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-light);
+}
+
+.metric-val {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-walnut-dark);
+}
+
+/* Nitelik Listesi */
+.species-highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.species-highlights-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+  line-height: 1.5;
+}
+
+.species-highlights-list svg {
+  color: var(--color-wood-brown);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.species-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px dashed var(--color-beige-light);
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------------------------------
+   3. HAKKIMIZDA SAYFASI ÖZEL STİLLERİ (HAKKIMIZDA.HTML)
+   ------------------------------------------------------------------------------ */
+.about-hero-banner {
+  background-color: var(--color-walnut-dark);
+  color: var(--color-white);
+  padding: 100px 0 60px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.about-value-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-md);
+  padding: 36px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.about-value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-wood-light);
+}
+
+.about-value-num {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--color-wood-amber);
+  margin-bottom: 12px;
+}
+
+.standards-section {
+  background-color: var(--color-cream);
+}
+
+.standards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------------------------
+   4. İLETİŞİM SAYFASI ÖZEL STİLLERİ (ILETISIM.HTML)
+   ------------------------------------------------------------------------------ */
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-card-box {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all var(--transition-smooth);
+}
+
+.contact-card-box:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-wood-light);
+}
+
+.contact-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-cream);
+  color: var(--color-wood-brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-content h4 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.contact-card-content p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+/* İnteraktif WhatsApp Mesaj Oluşturucu Form */
+.quote-contact-form-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-md);
+  padding: clamp(28px, 4vw, 40px);
+  box-shadow: var(--shadow-card);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-walnut-dark);
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 13px 18px;
+  background-color: var(--color-offwhite);
+  border: 1px solid var(--color-beige-light);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+  outline: none;
+  background-color: var(--color-white);
+  border-color: var(--color-wood-brown);
+  box-shadow: 0 0 0 3px rgba(118, 82, 57, 0.15);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.map-embed-wrapper {
+  margin-top: 60px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  height: 380px;
+  border: 1px solid var(--color-beige-light);
+}
+
+.map-embed-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ------------------------------------------------------------------------------
+   5. RESPONSIVE BREAKPOINTS (MEDYA SORGULARI)
+   ------------------------------------------------------------------------------ */
+
+/* 1199px ve Altı (Laptop & Küçük Ekranlar) */
+@media (max-width: 1199px) {
+  .footer-top-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 36px;
+  }
+}
+
+/* 991px ve Altı (Tablet & Büyük Telefonlar) */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 74px;
+  }
+
+  .desktop-nav-menu {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .header-actions-group .header-whatsapp-btn {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  .hero-overlay-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(37, 24, 18, 0.92) 0%,
+      rgba(43, 29, 22, 0.85) 60%,
+      rgba(37, 24, 18, 0.95) 100%
+    );
+  }
+
+  .nature-story-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .story-main-img {
+    height: 380px;
+  }
+
+  .story-floating-card {
+    right: 20px;
+    bottom: -20px;
+  }
+
+  .species-detail-card {
+    grid-template-columns: 1fr;
+  }
+
+  .species-visual-col {
+    min-height: 280px;
+  }
+
+  .standards-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .modal-inner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-gallery-col {
+    padding: 24px;
+  }
+
+  .modal-main-image-wrap {
+    height: 280px;
+  }
+
+  .modal-info-col {
+    padding: 28px;
+  }
+}
+
+/* 767px ve Altı (Mobil Cihazlar) */
+@media (max-width: 767px) {
+  .site-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 320px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-card-whatsapp,
+  .btn-card-add-quote {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .species-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .floating-contact-group {
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
+  }
+
+  .floating-whatsapp-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .floating-quote-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .floating-btn-tooltip {
+    display: none; /* Mobilde tooltip ekranı kaplamasın */
+  }
+
+  .quote-drawer {
+    width: 100vw;
+  }
+
+  .product-modal {
+    width: 95%;
+    max-height: 94vh;
+  }
+
+  .toast-container {
+    left: 16px;
+    right: 16px;
+    bottom: 80px;
+    max-width: none;
+  }
+}
+
+/* 420px ve Altı (Küçük Ekranlı Telefonlar) */
+@media (max-width: 420px) {
+  .brand-title {
+    font-size: 1.15rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.62rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .catalog-search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .catalog-sort-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+

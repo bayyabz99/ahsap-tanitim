@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- SEO Meta Etiketleri -->
+  <title>Valen Ahşap & Kereste | Fırınlanmış Kereste, Masif Panel ve Kalas Ürünleri</title>
+  <meta name="description" content="Doğanın gücünü ahşaba dönüştürüyoruz. Birinci sınıf fırınlanmış çam, meşe, ceviz, kayın, gürgen ve ladin kereste çeşitleri, masif panel ve dış mekan deck ahşapları." />
+  <meta name="keywords" content="kereste, ahşap, masif panel, çam kereste 5x10, meşe kalas, ceviz kütük, kayın kereste, ladin lambiri, iroko deck, fırınlanmış kereste" />
+  <meta name="author" content="Valen Ahşap & Kereste" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.valenahsap.com/index.html" />
+
+  <!-- Open Graph / Sosyal Medya -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Valen Ahşap & Kereste | Profesyonel Ahşap ve Kereste Çözümleri" />
+  <meta property="og:description" content="Kaliteli ahşap çeşitleri, özenle seçilmiş ağaç türleri ve güvenilir fırınlanmış kereste ürünlerimizle projelerinize değer katıyoruz." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://www.valenahsap.com/index.html" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- CSS Dosyaları -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- Schema.org Yapısal Veri (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Valen Ahşap & Kereste",
+    "description": "Profesyonel fırınlanmış kereste, masif panel, kütük plaka ve yapı ahşabı tedarikçisi.",
+    "telephone": "+902125551234",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Keresteciler Sanayi Sitesi, 14. Blok No: 28",
+      "addressLocality": "Başakşehir",
+      "addressRegion": "İstanbul",
+      "postalCode": "34490",
+      "addressCountry": "TR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "18:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "16:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==============================================================================
+       ÜST GEZİNME ÇUBUĞU (HEADER & NAV)
+       ============================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="site-container header-inner">
+      
+      <!-- Marka Logosu & Adı -->
+      <a href="index.html" class="brand-logo-link" title="Valen Ahşap & Kereste Ana Sayfa">
+        <div class="brand-icon-wrapper">
+          <!-- Ahşap Halka & Ağaç Vektör Simgesi -->
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L3 9l3 13h12l3-13z"/>
+            <path d="M12 6v12"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title" data-config="brandShortName">Valen Ahşap</span>
+          <span class="brand-subtitle">Kereste & Masif Ahşap</span>
+        </div>
+      </a>
+
+      <!-- Masaüstü Menü -->
+      <nav class="desktop-nav-menu" aria-label="Ana Menü">
+        <a href="index.html" class="nav-link active">Ana Sayfa</a>
+        <a href="urunler.html" class="nav-link">Ürünlerimiz</a>
+        <a href="agac-turleri.html" class="nav-link">Ağaç Türleri</a>
+        <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+        <a href="iletisim.html" class="nav-link">İletişim</a>
+      </nav>
+
+      <!-- Sağ Aksiyon Butonları -->
+      <div class="header-actions-group">
+        <!-- Talep Listesi / Fiyat Butonu -->
+        <button class="header-quote-btn" onclick="QuoteList.openDrawer()" aria-label="Talep Listenizi Görüntüleyin" title="Talep Listesi">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Talep Listem</span>
+          <span class="quote-badge-count" style="display: none;">0</span>
+        </button>
+
+        <!-- WhatsApp İletişim Butonu -->
+        <a href="#" class="header-whatsapp-btn" data-config="whatsappLink" title="WhatsApp ile İletişime Geçin">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.766.793 2.796.793 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.815-1.24L2 22l1.507-5.074A9.957 9.957 0 0 1 2 11.938c0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+          </svg>
+          <span>WhatsApp Danışma</span>
+        </a>
+
+        <!-- Mobil Menü Açıcı (Hamburger) -->
+        <button class="hamburger-btn" aria-label="Menüyü Aç" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobil Menü Çekmecesi & Karartma -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay"></div>
+  <aside id="mobile-navigation" class="mobile-navigation" aria-label="Mobil Gezinme">
+    <div class="mobile-nav-header">
+      <div class="brand-text-block">
+        <span class="brand-title" data-config="brandShortName">Valen Ahşap</span>
+        <span class="brand-subtitle">Kereste & Masif Ahşap</span>
+      </div>
+      <button class="mobile-nav-close" aria-label="Menüyü Kapat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Ana Sayfa</a>
+      <a href="urunler.html" class="mobile-nav-link">Ürünlerimiz</a>
+      <a href="agac-turleri.html" class="mobile-nav-link">Ağaç Türleri</a>
+      <a href="hakkimizda.html" class="mobile-nav-link">Hakkımızda</a>
+      <a href="iletisim.html" class="mobile-nav-link">İletişim</a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+      <button class="btn btn-secondary btn-sm" onclick="QuoteList.openDrawer()" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+        </svg>
+        <span>Talep Listem</span>
+        <span class="quote-badge-count" style="display: none;">0</span>
+      </button>
+
+      <a href="#" class="btn btn-whatsapp btn-sm" data-config="whatsappLink" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.766.793 2.796.793 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.815-1.24L2 22l1.507-5.074A9.957 9.957 0 0 1 2 11.938c0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+        </svg>
+        <span>WhatsApp İletişim</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==============================================================================
+       HERO BÖLÜMÜ
+       ============================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-layer">
+      <!-- Kaliteli Doğal Orman ve Kereste Dokusu -->
+      <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=2000&q=85" 
+           alt="Valen Ahşap ve Kereste Doğal Ağaç Dokusu" 
+           class="hero-bg-image" />
+      <div class="hero-overlay-gradient"></div>
+    </div>
+
+    <div class="site-container">
+      <div class="hero-content reveal-on-scroll">
+        
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Birinci Sınıf Fırınlanmış Ahşap & Kereste</span>
+        </div>
+
+        <h1 class="hero-title">
+          Doğanın Gücünü <span>Ahşaba</span> Dönüştürüyoruz.
+        </h1>
+
+        <p class="hero-description">
+          Kaliteli ahşap çeşitleri, özenle seçilmiş ağaç türleri ve güvenilir ürün anlayışımızla mimari projeleriniz, mobilya imalatlarınız ve inşaat ihtiyaçlarınıza uygun profesyonel çözümler sunuyoruz.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="urunler.html" class="btn btn-primary btn-lg">
+            <span>Ürünlerimizi Keşfedin</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <a href="#" class="btn btn-whatsapp btn-lg" data-config="whatsappLink">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.766.793 2.796.793 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.815-1.24L2 22l1.507-5.074A9.957 9.957 0 0 1 2 11.938c0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+            </svg>
+            <span>WhatsApp ile İletişime Geçin</span>
+          </a>
+        </div>
+
+        <!-- Rakamlarla Güven -->
+        <div class="hero-stats-row">
+          <div class="hero-stat-item">
+            <h4>%100</h4>
+            <p>Bilgisayar Kontrollü Fırın Kurusu (KD)</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>7+</h4>
+            <p>Özenle Seçilmiş Masif Ağaç Türü</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>Hızlı</h4>
+            <p>Depodan Doğrudan Sevkiyat & Teslimat</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       KATEGORİLERİMİZ (AĞAÇ TÜRLERİ VE ÜRÜN KATEGORİLERİ)
+       ============================================================================== -->
+  <section class="section-padding" id="kategoriler">
+    <div class="site-container">
+      
+      <div class="section-header-center reveal-on-scroll">
+        <span class="eyebrow-tag">Ağaç Koleksiyonumuz</span>
+        <h2 class="section-title">Ürün Kategorilerimiz</h2>
+        <p class="section-subtitle">
+          Her ağaç türünün kendine has lif yapısı, yoğunluğu ve estetiği bulunur. Projenize en uygun ahşap çeşidini seçerek ilgili ürünleri hemen inceleyebilirsiniz.
+        </p>
+      </div>
+
+      <div class="categories-grid" id="homepage-categories-grid">
+        <!-- JS ile WOOD_CATEGORIES verisinden yüklenecek -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       ÖNE ÇIKAN ÜRÜNLER (FEATURED PRODUCTS)
+       ============================================================================== -->
+  <section class="section-padding" style="background-color: var(--color-white);" id="one-cikanlar">
+    <div class="site-container">
+      
+      <div class="section-header-center reveal-on-scroll">
+        <span class="eyebrow-tag">Seçkin Ürünlerimiz</span>
+        <h2 class="section-title">Öne Çıkan Ahşap & Kereste Ürünleri</h2>
+        <p class="section-subtitle">
+          İnşaat taşıyıcılarından lüks masif kütüklere, fırınlanmış marangozluk kalaslardan dış mekan deck kaplamalarına kadar en çok tercih edilen ürünlerimiz.
+        </p>
+      </div>
+
+      <div class="products-grid" id="homepage-featured-products-grid">
+        <!-- JS ile WOOD_PRODUCTS.filter(p => p.featured) verisinden yüklenecek -->
+      </div>
+
+      <div class="text-center" style="margin-top: 48px; text-align: center;">
+        <a href="urunler.html" class="btn btn-secondary btn-lg">
+          <span>Tüm Ürün Kataloğunu İnceleyin (12+ Çeşit)</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       NEDEN BİZİ TERCİH ETMELİSİNİZ? (GÜVEN VE KURUMSAL STANDARTLAR)
+       ============================================================================== -->
+  <section class="section-padding why-us-section" id="neden-biz">
+    <div class="site-container">
+      
+      <div class="section-header-center reveal-on-scroll">
+        <span class="eyebrow-tag">Kurumsal Güvence</span>
+        <h2 class="section-title">Neden Valen Ahşap?</h2>
+        <p class="section-subtitle">
+          Ahşap işi titizlik, doğru kurutma ve malzeme bilgisi gerektirir. Yılların tecrübesiyle müşterilerimize tavizsiz kalite sunuyoruz.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        
+        <!-- Avantaj 1 -->
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Fırınlanmış (KD) Kalite</h3>
+          <p class="feature-desc">
+            Tüm kerestelerimiz bilgisayar kontrollü fırınlarda %8-12 ideal neme kadar kurutulur. Dönme, çekme veya çatlama yapmaz.
+          </p>
+        </div>
+
+        <!-- Avantaj 2 -->
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Geniş Ürün Yelpazesi</h3>
+          <p class="feature-desc">
+            Çamdan meşeye, cevizden irokoya kadar zengin ağaç türleri, standart ve özel ebatlama seçenekleri depomuzda hazırdır.
+          </p>
+        </div>
+
+        <!-- Avantaj 3 -->
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">Ölçü & Gönye Hassasiyeti</h3>
+          <p class="feature-desc">
+            Modern planya ve silme makinelerimizde 4 tarafı hassas temizlenmiş, projenize doğrudan montaja hazır ahşap yüzeyler sunuyoruz.
+          </p>
+        </div>
+
+        <!-- Avantaj 4 -->
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="feature-title">Hızlı ve Güvenilir Sevk</h3>
+          <p class="feature-desc">
+            İstanbul içi ve tüm Türkiye'ye ambalajlı, korumalı nakliye organizasyonu ile şantiyenize veya atölyenize zamanında teslimat.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       AHŞABIN DOĞALLIĞI (HİKAYE & DOĞAL DOKU BÖLÜMÜ)
+       ============================================================================== -->
+  <section class="section-padding" id="ahsap-dogalligi">
+    <div class="site-container">
+      
+      <div class="nature-story-grid">
+        
+        <!-- Sol: Büyük Görsel & Rozet -->
+        <div class="story-media-wrap reveal-on-scroll">
+          <img src="https://images.unsplash.com/photo-1542456510-4710d436c4f2?auto=format&fit=crop&w=1200&q=80" 
+               alt="Masif Meşe Kalas ve Ahşap Damar Detayı" 
+               class="story-main-img" />
+          
+          <div class="story-floating-card">
+            <h5>%100 Masif</h5>
+            <p>Doğanın binlerce yılda şekillendirdiği yaşayan organik doku.</p>
+          </div>
+        </div>
+
+        <!-- Sağ: Anlatı & Kontrol Listesi -->
+        <div class="story-content reveal-on-scroll">
+          <span class="eyebrow-tag">Ahşabın Ruhu</span>
+          <h2>Her Ağacın Kendine Özgü Bir Hikâyesi Var.</h2>
+          
+          <p class="story-lead-text">
+            Ahşap, yalnızca bir yapı veya mobilya malzemesi değil; doğanın zamanla işlediği yaşayan, nefes alan ve mekanlara sıcaklık katan bir sanattır.
+          </p>
+
+          <p class="story-body-text">
+            Bir meşe kalasının derin tanenli damarlarından, cevizin zengin çikolata harelere; çamın dirençli reçineli liflerinden kayının pürüzsüz homojen dokusuna kadar her ağaç türü projenize bambaşka bir karakter kazandırır. Tesislerimizde ahşabın doğal dengesini bozmadan, doğru fırınlama teknikleriyle onu zamana meydan okuyan bir esere dönüştürüyoruz.
+          </p>
+
+          <div class="story-checklist">
+            <div class="story-check-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Ortam nemini dengeleyen, nefes alan doğal lif anatomisi</span>
+            </div>
+            <div class="story-check-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Yıllar geçtikçe değerlenen, asil bir renk olgunluğu</span>
+            </div>
+            <div class="story-check-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Beton ve metale göre üstün doğal ısı ve akustik yalıtım</span>
+            </div>
+          </div>
+
+          <a href="agac-turleri.html" class="btn btn-primary">
+            <span>Ağaç Türleri Rehberini İnceleyin</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       İLETİŞİM ÇAĞRISI (CTA BANNER)
+       ============================================================================== -->
+  <section class="cta-banner-section" id="iletisim-cagrisi">
+    <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1600&q=80" 
+         alt="Kereste Atölyesi Arka Planı" 
+         class="cta-bg-texture" />
+
+    <div class="site-container">
+      <div class="cta-inner-card reveal-on-scroll">
+        <span class="eyebrow-tag" style="color: var(--color-wood-amber);">Hemen İletişime Geçin</span>
+        <h2 class="cta-title">Aradığınız Ahşabı Birlikte Bulalım.</h2>
+        <p class="cta-desc">
+          Ürünlerimiz, stok durumumuz, özel ebatlama imkanlarımız ve metreküp/adet fiyat tekliflerimiz hakkında bilgi almak için bizimle doğrudan iletişime geçin.
+        </p>
+
+        <div class="cta-buttons-group">
+          <a href="#" class="btn btn-whatsapp btn-lg" data-config="whatsappLink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.766.793 2.796.793 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.815-1.24L2 22l1.507-5.074A9.957 9.957 0 0 1 2 11.938c0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+            </svg>
+            <span>WhatsApp ile Fiyat Teklifi Alın</span>
+          </a>
+
+          <a href="tel:+902125551234" class="btn btn-outline-white btn-lg" data-config="phoneLink">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Telefon ile Arayın</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       SİTE ALT BİLGİSİ (FOOTER)
+       ============================================================================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Sütun 1: Marka & Açıklama -->
+        <div class="footer-brand-col">
+          <div class="brand-logo-link">
+            <div class="brand-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L3 9l3 13h12l3-13z"/>
+                <path d="M12 6v12"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: var(--color-white);" data-config="brandShortName">Valen Ahşap</span>
+              <span class="brand-subtitle" style="color: var(--color-wood-amber);">Kereste & Masif Ahşap</span>
+            </div>
+          </div>
+
+          <p>
+            Doğanın gücünü ve asaletini ahşaba dönüştürüyoruz. Fırınlanmış kereste, masif panel ve birinci sınıf mimari ahşap çözümleri.
+          </p>
+
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sütun 2: Hızlı Bağlantılar -->
+        <div>
+          <h4 class="footer-heading">Hızlı Erişim</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürün Kataloğu</a></li>
+            <li><a href="agac-turleri.html">Ağaç Türleri Rehberi</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim & Konum</a></li>
+          </ul>
+        </div>
+
+        <!-- Sütun 3: Ağaç Çeşitleri -->
+        <div>
+          <h4 class="footer-heading">Ağaç Türlerimiz</h4>
+          <ul class="footer-nav-list">
+            <li><a href="urunler.html?kategori=cam">Çam Kereste</a></li>
+            <li><a href="urunler.html?kategori=mese">Meşe Kalas & Panel</a></li>
+            <li><a href="urunler.html?kategori=ceviz">Ceviz Kütük Tablalar</a></li>
+            <li><a href="urunler.html?kategori=kayin">Buharlı Kayın</a></li>
+            <li><a href="urunler.html?kategori=ladin">Ladin Lambiri</a></li>
+            <li><a href="urunler.html?kategori=iroko">İroko Dış Mekan Deck</a></li>
+          </ul>
+        </div>
+
+        <!-- Sütun 4: İletişim Bilgileri -->
+        <div>
+          <h4 class="footer-heading">İletişim</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span data-config="address">Keresteciler Sanayi Sitesi, 14. Blok No: 28, Başakşehir / İstanbul</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+902125551234" data-config="phoneLink"><span data-config="phoneDisplay">+90 (212) 555 12 34</span></a>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.766.793 2.796.793 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.815-1.24L2 22l1.507-5.074A9.957 9.957 0 0 1 2 11.938c0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+              </svg>
+              <a href="#" data-config="whatsappLink"><span data-config="whatsappDisplay">+90 (532) 123 45 67</span></a>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span data-config="workingHours">Hafta İçi: 08:30 - 18:30 | Cmt: 09:00 - 16:00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Alt Telif & Bildirim -->
+      <div class="footer-bottom-bar">
+        <div>
+          © <span data-config="currentYear">2026</span> <strong data-config="brandName">Valen Ahşap & Kereste</strong>. Tüm Hakları Saklıdır.
+        </div>
+        <div>
+          Profesyonel Fırınlanmış Masif Ahşap ve Kereste Tanıtım Portalı
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==============================================================================
+       JAVASCRIPT MODÜLLERİ (SIRALI YÜKLEME)
+       ============================================================================== -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/data/categories.js"></script>
+  <script src="assets/data/wood-species.js"></script>
+  <script src="assets/data/products.js"></script>
+  <script src="assets/js/quote-list.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Ana Sayfa Kategori ve Öne Çıkan Ürünleri Yükleyici Betik -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // 1. Kategorileri Render Et
+      const catContainer = document.getElementById("homepage-categories-grid");
+      if (catContainer && window.WOOD_CATEGORIES) {
+        let catHtml = "";
+        window.WOOD_CATEGORIES.forEach(cat => {
+          catHtml += `
+            <a href="urunler.html?kategori=${cat.slug}" class="category-card reveal-on-scroll" title="${cat.name} Ürünlerini Gör">
+              <img src="${cat.image}" alt="${cat.name} Kereste ve Ahşap Dokusu" class="category-card-bg" loading="lazy" />
+              <div class="category-card-gradient"></div>
+              <div class="category-card-content">
+                <span class="category-tag">${cat.hardness}</span>
+                <h3 class="category-title">${cat.name}</h3>
+                <p class="category-desc">${cat.shortDescription}</p>
+                <span class="category-link-btn">
+                  <span>Ürünleri İncele</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          `;
+        });
+        catContainer.innerHTML = catHtml;
+      }
+
+      // 2. Öne Çıkan Ürünleri Render Et (featured: true olanlar)
+      const featContainer = document.getElementById("homepage-featured-products-grid");
+      if (featContainer && window.WOOD_PRODUCTS) {
+        const featured = window.WOOD_PRODUCTS.filter(p => p.featured);
+        let featHtml = "";
+        featured.forEach(product => {
+          const mainImg = (product.images && product.images[0] && product.images[0].url) || "";
+          const firstDim = (product.dimensions && product.dimensions[0]) || "";
+          const waLink = window.SITE_CONFIG.getProductWhatsAppLink(product.name, product.categoryName, firstDim);
+
+          featHtml += `
+            <article class="product-card reveal-on-scroll" data-id="${product.id}">
+              <div class="product-card-media">
+                ${product.badge ? `<span class="product-card-badge">${product.badge}</span>` : ""}
+                <span class="product-category-pill">${product.categoryName}</span>
+                <img src="${mainImg}" alt="${product.name}" loading="lazy" />
+                <div class="product-card-overlay">
+                  <button class="btn-card-quick-view" onclick="ProductModal.open('${product.id}')" title="Ürünü İncele">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    Detayları Gör
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card-body">
+                <div class="product-stock-tag">
+                  <span class="stock-dot"></span>
+                  <span>${product.stockStatus || 'Stokta'}</span>
+                </div>
+
+                <h3 class="product-card-title">
+                  <a href="javascript:void(0)" onclick="ProductModal.open('${product.id}')">
+                    ${product.name}
+                  </a>
+                </h3>
+
+                <p class="product-card-desc">${product.shortDescription}</p>
+
+                ${firstDim ? `
+                  <div class="product-dim-preview">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 3L3 21M3 3l18 18"/>
+                    </svg>
+                    <span>${firstDim}</span>
+                  </div>
+                ` : ""}
+
+                <div class="product-price-note">
+                  ${product.priceNote || "Fiyat ve stok bilgisi için iletişime geçin"}
+                </div>
+
+                <div class="product-card-actions">
+                  <a href="${waLink}" target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp" title="WhatsApp'tan Fiyat Sor">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.766.793 2.796.793 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.815-1.24L2 22l1.507-5.074A9.957 9.957 0 0 1 2 11.938c0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+                    </svg>
+                    <span>Fiyat Sor</span>
+                  </a>
+
+                  <button class="btn btn-card-add-quote" onclick="QuoteList.addItem(WOOD_PRODUCTS.find(p=>p.id==='${product.id}'))" title="Talep Listeme Ekle">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>Listeye Ekle</span>
+                  </button>
+                </div>
+
+              </div>
+            </article>
+          `;
+        });
+        featContainer.innerHTML = featHtml;
+      }
+    });
+  </script>
+</body>
+</html>
+
